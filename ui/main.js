@@ -1,2 +1,2 @@
 console.log('Loaded!');
-response.write("hi");
+res.write("hi");

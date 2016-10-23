@@ -1,4 +1,4 @@
 console.log('Loaded!');
 alert("Hello");
-var txtfield=document.getElementById("id1");
-alert(txtfield.value);
+var txtfield=document.getElementById("id1").value;
+alert(txtfield);

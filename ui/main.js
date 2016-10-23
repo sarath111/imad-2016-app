@@ -7,6 +7,9 @@ var img=document.getElementById('img1');
 var marginleft=1;
 img.onclick= function() {
   alert("clicked on img");
-  marginleft=marginleft+1;
-  img.style.marginLeft=marginleft+"px";
+  setInterval(moveright,50);
 };
+function moveright() {
+   marginleft=marginleft+1; 
+   img.style.marginLeft=marginleft+"px";
+}

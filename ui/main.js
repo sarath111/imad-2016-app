@@ -1,2 +1,2 @@
 console.log('Loaded!');
-hello
+response.write("hi");

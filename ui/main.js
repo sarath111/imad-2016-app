@@ -6,4 +6,5 @@ txtfield.innerHTML="Hello";
 var img=document.getElementById('img1');
 img.onclick= function() {
   alert("clicked on img");
+  img.style.marginLeft="100px";
 };

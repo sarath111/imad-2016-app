@@ -15,6 +15,8 @@
 //}
 
 var button=document.getElementById('counter');
+var counter = 0;
+
 button.onclick = function () {
     //Make a req to counter endpoint
     
@@ -22,7 +24,7 @@ button.onclick = function () {
     //Capture the response and store it in a variable
     
     //Rendering the variable in the correct span
-    counter = counter+1;
+    counter = counter + 1;
     document.getElementById('count').innerHTML=counter.toString();
     
 };

@@ -43,11 +43,29 @@ button.onclick = function () {
 var nameText=document.getElementById('name').value;
 var submit=document.getElementById('submit_btn');
 submit.onclick = function() {
-    var names = ['name1','name2','name3'];
-    var list = '';
-    for(var i=0;i<names.length;i++){
-        list += "<li>" + names[i] + "</li>";
-    }
-    var ui = document.getElementById('namelist');
-    ui.innerHTML= list;
+    
+    var request=new XMLHttpRequest();
+    
+    //Capture the response and store it in a variable
+    request.onreadystatechange = function(){
+        if(request.readyState == XMLHttpRequest.DONE){
+            if(request.status == 200){
+                //successfull completion of req
+                 var names = ['name1','name2','name3'];
+                 var list = '';
+                 for(var i=0;i<names.length;i++){
+                     list += "<li>" + names[i] + "</li>";
+                 }
+                 var ui = document.getElementById('namelist');
+                 ui.innerHTML= list;
+            }
+        }
+        
+    };
+    
+    //Make a request to counter endpoint
+    request.open('GET','http://sarath111.imad.hasura-app.io/counter',true);
+    request.send(null);
+    
+   
 };

@@ -28,6 +28,7 @@ button.onclick = function () {
                 //successfull completion of req
                 var counter = request.responseText;
                 counter = counter+1;
+                alert("hi");
                 document.getElementById('count').innerHTML=counter.toString();
             }
         }

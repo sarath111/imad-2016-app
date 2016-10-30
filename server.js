@@ -95,7 +95,8 @@ app.get('/submit-name/:name',function(req,res){
     var name = req.params.name;
     names.push(name);
     //JSON -- JAVA script Object Notation.converts jasvascript objects into strings
-    res.send(JSON.stringify(names));
+    res.send(names);
+    //res.send(JSON.stringify(names));
     
 });
 

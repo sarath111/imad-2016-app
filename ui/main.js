@@ -35,6 +35,7 @@ button.onclick = function () {
     };
     
     //Make a request to counter endpoint
-    
+    request.open('GET','http://sarath111.imad.hasura-app.io/counter',true);
+    request.send(null);
     
 };

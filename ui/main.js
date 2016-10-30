@@ -23,8 +23,8 @@ button.onclick = function () {
     
     //Capture the response and store it in a variable
     request.onreadystatechange = function(){
-        if(request.readyState === XMLHttpRequest.DONE){
-            if(request.status === 200){
+        if(request.readyState == XMLHttpRequest.DONE){
+            if(request.status == 200){
                 //successfull completion of req
                 var counter = request.responseText;
                 document.getElementById('count').innerHTML=counter.toString();

@@ -64,7 +64,7 @@ submit.onclick = function() {
     };
     
     //Make a request to counter endpoint
-    request.open('GET','http://sarath111.imad.hasura-app.io?name=sarath',true);
+    request.open('GET','http://sarath111.imad.hasura-app.io/submit-name?name=sarath',true);
     request.send(null);
     
    

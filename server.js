@@ -20,6 +20,33 @@ var articleThree = {
             </p>`
 };
 
+var htmlTemplate = 
+`<html>
+    <head>
+        <title>
+            ${title};
+        </title>
+         <link href="/ui/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div>
+            <a href ="/">Home</a>
+        </div>
+        <hr/>
+        <h3>
+            ${heading};
+        </h3>
+        <div>
+            ${date};
+        </div>
+        <div>
+            ${content};
+        </div>
+    </body>
+    
+</html>`
+;
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });

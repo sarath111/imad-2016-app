@@ -51,7 +51,7 @@ submit.onclick = function() {
         if(request.readyState == XMLHttpRequest.DONE){
             if(request.status == 200){
                 //successfull completion of req
-                 var names = ['name1','name2','name3'];
+                 //var names = ['name1','name2','name3'];
                  var list = '';
                  for(var i=0;i<names.length;i++){
                      list += "<li>" + names[i] + "</li>";
@@ -64,7 +64,7 @@ submit.onclick = function() {
     };
     
     //Make a request to counter endpoint
-    request.open('GET','http://sarath111.imad.hasura-app.io/counter',true);
+    request.open('GET','http://sarath111.imad.hasura-app.io?name=sarath',true);
     request.send(null);
     
    

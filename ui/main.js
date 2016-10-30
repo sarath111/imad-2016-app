@@ -38,3 +38,10 @@ button.onclick = function () {
     request.send(null);
     
 };
+
+
+var nameText=document.getElementById('name').value;
+var submit=document.getElementById('submit_btn');
+submit.onclick = function() {
+    
+};

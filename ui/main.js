@@ -40,10 +40,11 @@ button.onclick = function () {
 };
 
 
-var nameText=document.getElementById('name').value;
-var submit=document.getElementById('submit_btn');
+
 submit.onclick = function() {
     
+    var nameText=document.getElementById('name').value;
+    var submit=document.getElementById('submit_btn');
     var request=new XMLHttpRequest();
     
     //Capture the response and store it in a variable

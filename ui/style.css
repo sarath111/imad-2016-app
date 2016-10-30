@@ -9,7 +9,7 @@ body {
 }
 
 .text-big {
-    font-size: 300%;
+    font-size: 100%;
 }
 
 .bold {
@@ -20,7 +20,7 @@ body {
     height: 200px;
 }
  .container{
-    max-width:;"800px";
+    max-width:"800";
     margin: 0 auto;
     color:grey;
     font-family:sans-serif;

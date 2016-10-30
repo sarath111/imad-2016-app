@@ -8,7 +8,16 @@ app.use(morgan('combined'));
 var articleThree = {
     title : "Article Three",
     heading : 'Article Three by Sarath',
-    date : '30-OCT-2016'
+    date : '30-OCT-2016',
+    content : `<p>
+                THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE TWO of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.
+            </p>
+            <p>
+                 THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE TWO of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.
+            </p>
+            <p>
+                 THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE TWO of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.THIS IS RELATED TO ARTICLE THREE of constitution.
+            </p>`
 };
 
 app.get('/', function (req, res) {
